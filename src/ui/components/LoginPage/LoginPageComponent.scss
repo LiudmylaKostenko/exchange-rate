@@ -1,0 +1,43 @@
+.main-wrapper {
+  .container {
+    text-align: center;
+    color: #3f51b5;
+    form {
+      .form-group {
+        margin-top: 20px;
+        label.userLogin {
+          margin-left: 8px;
+        }
+        label.password {
+          padding: 0;
+        }
+        .login-btn,
+        .btn-signUp {
+          width: 100px;
+          height: 32px;
+          font-size: 15px;
+          font-weight: bold;
+          color: #483bbed1;
+          margin: 10px;
+          border: 1px solid #fdfdfd;
+          background: #d2e6e09c;
+          letter-spacing: 2px;
+        }
+        .btn-signUp {
+          text-decoration: none;
+          padding: 5px;
+          font-weight: bolder;
+          font-size: 18px;
+        }
+        .has-error {
+          border: 1px solid red;
+        }
+        label {
+          padding: 10px;
+          font-size: 20px;
+          color: blue;
+        }
+      }
+    }
+  }
+}
