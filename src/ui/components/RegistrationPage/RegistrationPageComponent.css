@@ -1,0 +1,56 @@
+.main-wrapper .container {
+  text-align: center;
+  padding: 10px;
+  color: #3f51b5;
+}
+.main-wrapper .container .content-alert .alert-danger {
+  color: red;
+}
+.main-wrapper .container .content-alert .alert-success {
+  color: green;
+}
+.main-wrapper .container form .form-group {
+  margin-top: 20px;
+}
+.main-wrapper .container form .form-group .has-error {
+  border: 1px solid red;
+}
+.main-wrapper .container form .form-group label {
+  padding: 10px;
+  font-size: 20px;
+  color: blue;
+}
+.main-wrapper .container form .form-group label.password {
+  padding: 0;
+}
+.main-wrapper .container form .form-group .form-control {
+  text-decoration: none;
+  height: 25px;
+  letter-spacing: 2px;
+  margin: 0 7px;
+}
+.main-wrapper .container form .form-group .help-block {
+  padding-top: 10px;
+  color: red;
+  font-size: 18px;
+}
+.main-wrapper .container form .form-group .btn-register,
+.main-wrapper .container form .form-group .btn-signIn {
+  width: 100px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #483bbed1;
+  margin: 10px;
+  border: 1px solid #fdfdfd;
+  background: #d2e6e09c;
+  letter-spacing: 2px;
+}
+.main-wrapper .container form .form-group .btn-signIn {
+  text-decoration: none;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=RegistrationPageComponent.css.map */
