@@ -1,0 +1,7 @@
+@mixin h_p_attributes($font-family, $weight, $size, $spacing, $transform) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+  letter-spacing: $spacing;
+  text-transform: $transform;
+}

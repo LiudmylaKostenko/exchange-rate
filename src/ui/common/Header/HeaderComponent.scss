@@ -1,0 +1,28 @@
+.main-wrapper {
+  .container {
+    .content-alert {
+      header {
+        h1 {
+          color: #1d960d;
+        }
+        h1 + p {
+          font-size: 20px;
+          color: #a96203;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 875px) {
+  .main-wrapper {
+    .container {
+      .content-alert {
+        .header {
+          width: 100%;
+          flex-wrap: wrap!important;
+        }
+      }
+    }
+  }
+}
