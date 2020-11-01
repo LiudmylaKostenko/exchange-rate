@@ -1,0 +1,7 @@
+.notfound-container .notfound-text-wrapper h1.notfound-title,
+.notfound-container .notfound-text-wrapper p.notfound-text {
+  color: red;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=NotFoundComponent.css.map */
