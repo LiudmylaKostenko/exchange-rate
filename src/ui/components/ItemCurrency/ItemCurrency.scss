@@ -1,0 +1,41 @@
+.item-currency {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  align-items: baseline;
+  color: #100586;
+  font-weight: bold;
+  background: #2ecc81b5;
+  margin: 10px;
+  .remove {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background:#2ecc811c;
+  }
+  :hover{
+    cursor: pointer;
+  }
+  .fa-trash-alt{
+    color: red;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 875px) {
+  .main-wrapper {
+    .container {
+      .item-currency{
+        flex-wrap: wrap !important;
+        width: 100%;
+        button.remove{
+          i.fa-trash-alt{
+            position: relative!important;
+          }
+        }
+      }
+    }
+  }
+}
+

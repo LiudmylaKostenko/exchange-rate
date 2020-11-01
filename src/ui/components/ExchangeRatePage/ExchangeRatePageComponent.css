@@ -1,0 +1,111 @@
+body {
+  background-color: #0d00ff42;
+}
+body .main-wrapper .container .content-alert .header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 18px;
+}
+body .main-wrapper .container .content-alert .header .describe-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+body .main-wrapper .container .content-alert .header .describe-content .logo {
+  width: 120px;
+  height: 130px;
+}
+body .main-wrapper .container .content-alert .header .describe-content .describe-logo {
+  align-self: center;
+}
+body .main-wrapper .container .content-alert .content-settings {
+  display: flex;
+  padding: 10px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+body .main-wrapper .container .content-alert .content-settings p {
+  font-size: 25px;
+  color: #ce0e8c;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+body .main-wrapper .container .content-alert .content-settings .content-rules__currency .select-rules {
+  margin: 10px;
+  font-size: 20px;
+  background: #0d00ff00;
+  border: none;
+}
+body .main-wrapper .container .content-alert .content-settings .content-rules__currency span {
+  font-size: 25px;
+  font-weight: bolder;
+}
+body .main-wrapper .container .content-alert .content-settings .addItem {
+  width: 120px;
+  height: 40px;
+  font-size: 26px;
+  border-radius: 7px;
+  background: #0000001f;
+  border: none;
+  cursor: pointer;
+}
+body .main-wrapper .container .content-alert .content-settings .addItem .fas.fa-plus {
+  color: #564ee6;
+}
+body .main-wrapper .container .content-alert .content-title__settings {
+  display: flex;
+  padding: 10px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
+body .main-wrapper .container .content-alert .content-title__settings .refresh-time__wrapper span {
+  font-size: 25px;
+  color: #901414;
+  font-weight: bolder;
+}
+body .main-wrapper .container .content-alert .content-title__settings .refresh-time__wrapper select.time-refresh {
+  margin: 10px;
+  font-size: 20px;
+  background: #0d00ff00;
+}
+body .main-wrapper .container .content-alert .content-title__settings p.data-time__refresh {
+  font-size: 25px;
+  color: red;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+body .main-wrapper .container .content-alert .title-column {
+  color: #945892;
+  font-weight: bolder;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  width: 75%;
+}
+body .main-wrapper .container .content-alert .title-column p {
+  padding: 0 90px 0;
+  color: #9625bd;
+  font-size: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 875px) {
+  .main-wrapper .container .content-alert .content-settings .addItem {
+    position: relative !important;
+    top: 35px !important;
+  }
+  .main-wrapper .container .content-alert .content-title__settings {
+    flex-wrap: wrap !important;
+  }
+  .main-wrapper .container .content-alert .title-column {
+    margin: 0 auto;
+  }
+  .main-wrapper .container .content-alert .title-column p {
+    padding: 0 10px 0 !important;
+    font-size: 22px !important;
+  }
+}
+
+/*# sourceMappingURL=ExchangeRatePageComponent.css.map */
