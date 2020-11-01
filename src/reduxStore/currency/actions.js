@@ -8,10 +8,16 @@ import {
 	SAVE_OPTION_VALUE_TO,
 	SAVE_OPTION_VALUE_FROM,
 } from './actionTypes';
+import fetch from "isomorphic-fetch";
+import {BASE_API_URL} from "../../config";
 
 export const getCurrencies = () => async (dispatch) => {
-	const data = await currenciesApi.getApiCurrencies();
-	dispatch({ type: GET_CURRENCY_PAIRS, data }); // get currencies from api and dispatch in store
+	try {
+		const data = await currenciesApi.getApiCurrencies();
+		dispatch({ type: GET_CURRENCY_PAIRS, data }); // get currencies from api and dispatch in store
+	} catch (err) {
+		throw new Error(err);
+	}
 };
 
 export const updateCurrencyPair = (updatePair) => (dispatch) => {
