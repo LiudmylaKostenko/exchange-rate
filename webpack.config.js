@@ -1,12 +1,13 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const path = require("path");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, 'dist'),
+    filename: "[name].[contenthash].js",
+    path: path.resolve(__dirname, "dist"),
   },
   mode: "development",
   resolve: {
@@ -42,6 +43,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
+    new CleanWebpackPlugin(),
     new FaviconsWebpackPlugin("./public/favicon.ico"),
   ],
   devServer: {
