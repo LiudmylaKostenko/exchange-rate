@@ -13,8 +13,10 @@
     "@testing-library/user-event": "^12.1.10",
     "babel-loader": "^8.0.5",
     "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "latest",
     "config": "^3.3.2",
     "connected-react-router": "^6.8.0",
+    "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",
     "eslint": "^7.12.1",
     "eslint-config-airbnb": "^18.2.0",
@@ -26,7 +28,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "favicons-webpack-plugin": "^4.2.0",
     "file-loader": "^6.2.0",
     "history": "^4.10.1",
     "html-webpack-plugin": "latest",
@@ -55,10 +56,10 @@
   },
   "scripts": {
     "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "webpack-dev-server --open"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
