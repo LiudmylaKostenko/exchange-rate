@@ -180,17 +180,19 @@ class ExchangeRatePageContainer extends React.Component {
 				currencyPairAPI,
 				allCurrencies[step].symbol.toString().split(';')[0]
 			);
-
-			if (
-				`${findSymbolAtUserList.toString().split(';')[2]}` !==
-					`${findSymbolAtListApi.toString().split(';')[2]}` ||
-				`${findSymbolAtUserList.toString().split(';')[1]}` !== `${findSymbolAtListApi.toString().split(';')[1]}`
-			) {
-				updateCurrencyPair({
-					bid: `${findSymbolAtListApi.toString().split(';')[2]}`,
-					ask: `${findSymbolAtListApi.toString().split(';')[1]}`,
-					id: `${findSymbolAtUserList.toString().split(';')[3]}`,
-				});
+			if (findSymbolAtListApi.length !== 0) {
+				if (
+					`${findSymbolAtUserList.toString().split(';')[2]}` !==
+						`${findSymbolAtListApi.toString().split(';')[2]}` ||
+					`${findSymbolAtUserList.toString().split(';')[1]}` !==
+						`${findSymbolAtListApi.toString().split(';')[1]}`
+				) {
+					updateCurrencyPair({
+						bid: `${findSymbolAtListApi.toString().split(';')[2]}`,
+						ask: `${findSymbolAtListApi.toString().split(';')[1]}`,
+						id: `${findSymbolAtUserList.toString().split(';')[3]}`,
+					});
+				}
 			}
 		}
 	};
